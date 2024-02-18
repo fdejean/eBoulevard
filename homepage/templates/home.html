@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Hero Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center p-5 mb-4 bg-dark rounded-3 border">
+                <h1 class="display-5 fw-bold text-white">E-BOU</h1>
+                {% if request.session.lang == 'fr' %}
+                    <p class="lead text-light">L'association d'esports pour les étudiants universitaires.</p>
+                {% else %}
+                    <p class="lead text-light">The esports association for university students.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Ebou CUP IV Section -->
+    <div class="row text-white">
+        <div class="col-md-6 mb-4">
+            <div class="h-100 p-5 text-white bg-dark border rounded-3">
+                <h2>Ebou CUP IV</h2>
+                <p>The Ebou CUP IV is our annual flagship tournament, bringing together the best talent from universities nationwide. Experience the thrill of competition and the camaraderie of the esports community.</p>
+            </div>
+        </div>
+        
+        <!-- Weeklies Section -->
+        <div class="col-md-6 mb-4">
+            <div class="h-100 p-5 bg-dark border rounded-3">
+                <h2>Weeklies</h2>
+                <p>Join our weekly esports contests to sharpen your skills, meet new players, and stay engaged with the latest games. Open to all skill levels, our Weeklies are the perfect way to dive into competitive gaming.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+{% endblock %}
