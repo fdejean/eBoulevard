@@ -6,14 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}My Site{% endblock %}</title>
+
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
     <!-- Ensure your project includes Bootstrap's dark theme CSS or use Bootstrap classes designed for dark themes -->
 </head>
 <body class="bg-dark text-white">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <a href="https://pese.ch/"><img style="height: 75px;" src='/static/img/logo/Logo E-bou by Abel.png' alt="PESE Logo"></a>
+                <a href="https://pese.ch/"><img class="p-2" style="height: 75px;" src='/static/img/logo/Logo E-bou by Abel.png' alt="PESE Logo"></a>
                 <!-- TODO fix url-->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
